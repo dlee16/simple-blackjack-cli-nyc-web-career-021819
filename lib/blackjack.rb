@@ -54,7 +54,7 @@ def runner
   card_deal =initial_round
   until card_deal >32
   card_deal = hit?(card_deal)
-  puts display_card_total(card_deal)
+  puts display_card_total(card_total)
 end
 end_game
 end
