@@ -52,10 +52,10 @@ end
 def runner
   welcome
   card_deal =initial_round
-  hit?
-  display_card_total
-  until display_card_total >21
-end_game
+  until card_deal >32
+  card_deal = hit?(card_deal)
+  display_card_total(card_deal)
 end
+end_game
 end
     
